@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>OJO AL Charque</title>
+    <!-- loader-->
+    <script src="assets/js/d3.min.js"></script>
+    <!--<script src="assets/js/chart.min.js"></script>-->
+    <link href="assets/css/pace.min.css" rel="stylesheet" />
+    <script src="assets/js/pace.min.js"></script>
+    <!--favicon-->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <!-- Vector CSS -->
+    <link
+      href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css"
+      rel="stylesheet"
+    />
+    <!-- simplebar CSS-->
+    <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- animate CSS-->
+    <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+    <!-- Icons CSS-->
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <!-- Sidebar CSS-->
+    <link href="assets/css/sidebar-menu.css" rel="stylesheet" />
+    <!-- Custom Style-->
+    <link href="assets/css/app-style.css" rel="stylesheet" />
+  
+  
+  </head>
+
+  <body class="bg-theme bg-theme1">
+    <!-- Start wrapper-->
+    <div id="wrapper">
+      <!--Start sidebar-wrapper-->
+      <div
+        id="sidebar-wrapper"
+        data-simplebar=""
+        data-simplebar-auto-hide="true"
+      >
+        <div class="brand-logo">
+          <a href="index.html">
+            <img
+              src="assets/images/icon/logo.png"
+              class="logo-icon"
+              alt="logo icon"
+            />
+            <h5 class="logo-text">Ojo Al Charque</h5>
+          </a>
+        </div>
+        <ul class="sidebar-menu do-nicescrol">
+          <li class="sidebar-header">MENU</li>
+          <li>
+            <a href="index.html">
+              <i class="zmdi zmdi-view-dashboard"></i> <span>Principal</span>
+            </a>
+          </li>
+          <li>
+            <a href="proyecto.html">
+              <i class="zmdi zmdi-view-dashboard"></i> <span>Proyecto</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="sicoes.html">
+              <i class="zmdi zmdi-invert-colors"></i>
+              <span>Contrataciones - SICOES</span>
+              <small class="badge float-right badge-light">New</small>
+            </a>
+          </li>
+
+          <li>
+            <a href="sicoes.html">
+              <i class="zmdi zmdi-format-list-bulleted"></i>
+              <span>PAC - SICOES</span>
+              <small class="badge float-right badge-light">New</small>
+            </a>
+          </li>
+
+          <li>
+            <a href="profile.html">
+              <i class="zmdi zmdi-calendar-check"></i> <span>Acerca de</span>
+            </a>
+          </li>
+
+          <li class="sidebar-header">ENLACES DE INTERES</li>
+          <li>
+            <a href="https://github.com/ojoalcharque/data" target="_blank"
+              ><i class="zmdi zmdi-share text-success"></i>
+              <span>Github - Repo</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.sea.gob.bo/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>Servicio Estatal de Autonomías</span></a
+            >
+          </li>
+          <li>
+            <a href="http://agamdepaz.com.bo/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>AGAMDEPAZ</span></a
+            >
+          </li>
+          <li>
+            <a href="https://rafalopezv.io/competencias/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>Rafael López</span></a
+            >
+          </li>
+          <li>
+            <a href="https://fam.org.bo/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>FAM - Bolivia</span></a
+            >
+          </li>
+          <li>
+            <a href="http://amb.bo/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>AMB - Bolivia</span></a
+            >
+          </li>
+          <li>
+            <a href="http://www.gacetaoficialdebolivia.gob.bo/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>GACETA OFICIAL</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="http://www.presidencia.gob.bo/index.php/viceministerios/va"
+              target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>Viceministerio de Autonomías</span></a
+            >
+          </li>
+          <li>
+            <a href="http://www.fdi.gob.bo/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>Fondo de Desarrollo Indigena</span></a
+            >
+          </li>
+          <li>
+            <a href="http://redpccs.org.bo/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>RED PCCS</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://jubileobolivia.com/Ambito-Tematico/Presupuestos-y-Fiscalidad"
+              target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i> <span>Jubileo</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.sicoes.gob.bo/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i> <span>SICOES</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <!--End sidebar-wrapper-->
+
+      <!--Start topbar header-->
+      <header class="topbar-nav">
+        <nav class="navbar navbar-expand fixed-top">
+          <ul class="navbar-nav mr-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link toggle-menu" href="javascript:void();">
+                <i class="icon-menu menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+            </li>
+          </ul>
+        </nav>
+      </header>
+<!--End topbar header-->
+
+<div class="clearfix"></div>
+	
+  <div class="content-wrapper">
+    <div class="container-fluid">
+
+  <!--Start Dashboard Content-->
+
+	<div class="row">
+     <div class="col-12 col-lg-12 col-xl-12">
+	    <div class="card">
+     <div class="card-header"><h3>Ojo al Charque</h3>
+      
+		   <div class="card-action">
+            Proyecto Final para el diplomado de Datos Abiertos, el analisis de los ultimos dos años en la gestión de los recursos publicos, 
+            datos obtenidos del SICOES, para un analisis por Municipio del Deparamento de La Paz. 
+		   </div>
+		 </div>
+     <div class="card-body">
+      <h4>1.     Introducción</h4>
+      
+      <p>En el último tiempo las Administraciones Públicas en todo el mundo enfrentan nuevos desafíos producto de la introducción de Tecnologías de Información y Comunicación (TIC). Se presentan diferentes formas de relacionamiento y demandas, cada vez más específicas, a las que los Gobiernos deben adaptarse y generar un profundo cambio interno y en su relación con la comunidad.</p>
+      <p>
+      Así como nosotros lo hacemos, en el ejercicio de sus funciones la Administración Pública produce grandes cantidades de datos. Éstos son de todas las personas y no pertenecen a ningún Gobierno. Su valor es enorme: los distintos sectores de la sociedad pueden tomar decisiones de muchísima importancia con ellos.
+      </p>
+      <p>
+      Los datos abiertos, son aquellos a los que cualquier persona puede acceder, usar y compartir libremente. Sin embargo, en la práctica no todos pueden acceder a ella o si lo hacen, es con mucha dificultad. Un claro ejemplo es el caso de los datos publicados en el Sistema de Contrataciones Estatales (SICOES), que es el sistema oficial de publicación y difusión de información de los procesos de contratación de las entidades públicas del Estado Plurinacional de Bolivia, impide a los ciudadanos cumplir su tarea fiscalizadora y de control social a través de diversas restricciones en el acceso a su sitio web.
+      </p>
+      <p>
+      Ante ello, surge el proyecto “Ojo al charque”(que significa estar alerta para no ser engañado), como una respuesta para resolver el problema de acceso y uso de datos sobre contrataciones públicas, a través de un modelo de datos de contrataciones abiertas publicadas en el sitio web https://ojoalcharque.github.io/public/index.html, que busca fortalecer los procesos de participación y control social en cuanto a los presupuestos públicos de los 87 municipios del departamento de La Paz.
+      </p>
+      
+      </div>
+      <div class="card-body">
+      <h4>2.     Antecedentes</h4>
+      
+      <p>
+      La transparencia, hoy en día se ha convertido en un indicador fundamental de la calidad de los gobiernos que aspiran a considerarse democráticos y en presupuesto necesario para que los ciudadanos puedan ejercer adecuadamente su valoración y una verdadera intervención participativa.
+      </p>
+      <p>
+      La falta de transparencia de los gobiernos fortalece en cierto modo la corrupción. En este tiempo, esta corrupción tiene el riesgo de aumentar a partir de las compras y contrataciones que realizan los Gobiernos a nivel mundial para afrontar la crisis por la pandemia del coronavirus.
+      </p>
+      <p>
+      Claros ejemplos se ven reflejados en casos como los que se vivieron en nuestro país, con la destitución del exministro de salud Marcelo Navajas por la compra de ventiladores con sobreprecio, equipos que ni siquiera era adecuados para su propósito; o el caso de Polonia donde el Ministro de Salud está bajo fuego luego de que el gobierno compró más de 10.000 máscaras inútiles  a través de un amigo de la familia; a este ejemplo se unen muchas como la investigación en Bosnia y Herzegovina sobre un contrato gubernamental multimillonario para ventiladores que fue a una granja de frambuesas con conexiones políticas; y la renuncia en Panamá  de un político de alto rango involucrado en otro escándalo  de adquisición de ventiladores.
+      </p>
+      <p>
+      Bolivia ha realizado en los últimos años avances importantes, pero no suficientes, en la promoción de la transparencia y lucha contra la corrupción. Primero en 2007 con la elaboración e implementación de la Política Nacional de Transparencia y Lucha contra la Corrupción y luego en 2010 con la Ley No. 004 – de Lucha contra la Corrupción, Enriquecimiento Ilícito e Investigación de Fortunas - Marcelo Quiroga Santa Cruz.
+      </p>
+      <p>
+      La Constitución Política del Estado reconoce la participación de la sociedad civil organizada ejerciendo el control social a la gestión pública en todos los niveles del Estado y empresas e instituciones públicas, mixtas y privadas que administren recursos fiscales, sin embargo dicho control se ve frustrado por la falta de accesibilidad a datos que deberían ser públicos.
+      </p>
+      <p>
+      Es por eso que en su momento la Agencia de Gobierno Electrónico y Tecnologías de Información y Comunicación (AGETIC), entidad descentralizada dependiente del Ministerio de la Presidencia, impulsó la discusión de la apertura de datos y su relación con el gobierno electrónico a partir del concepto de “datos libres” a través del portal web Datos Abiertos Bolivia, el cual no cumplió del todo su objetivo debido a que solo tiene almacenado 38 bases de datos correspondiente a siete entidades gubernamentales.
+      </p>
+      <p>
+      Si bien se cuenta el Decreto Supremo 27329 de “Transparencia y Libre Acceso a la Información Gubernamental”, sancionado en enero de 2004 por el entonces presidente Carlos D. Mesa, en Bolivia aún no hay una ley de acceso a la información pública, gobierno abierto ni datos abiertos.  
+      </p>
+      <p>
+      Bolivia es uno de los dos países sudamericanos (el otro es Venezuela) que no ha debatido, aprobado y promulgado una Ley de Acceso a la Información Pública. El derecho de acceso a la información pública permite que otros derechos se promuevan, una cultura de información abierta y mitiga la cultura del secreto, también proporciona mejores garantías para el ejercicio de los derechos de los ciudadanos.
+      </p>
+      <p>
+      Sin embargo, hay que reconocer que el Estado en todos sus niveles gubernativos ha abierto espacios para que la sociedad civil pueda ser parte de la gestión pública, aplicando los mandatos constitucionales de equidad de género, generacional para personas con capacidades diferentes, pueblos indígenas, cualquier grupo colectivo y/o organización que habite en el territorio nacional, que está habilitada y llamada por ley a participar en las decisiones más importantes de las entidades sub nacionales y nivel central.
+      </p>
+      <p>
+      El control social es un derecho constitucional de carácter participativo y exigible, mediante el cual todo actor social puede supervisar y evaluar la ejecución de la Gestión Estatal, el manejo apropiado de los recursos económicos, materiales, humanos, naturales y la calidad de los servicios públicos y servicios básicos, para la autorregulación del orden social; sin embargo, este derecho se ve vulnerado cuando un ciudadano se ve imposibilitado en su acceso a información  que lo ayude en su tarea fiscalizadora, tal es el caso de la información publicada en el Sistema de Contrataciones Estatales (SICOES), que es el sistema oficial de publicación y difusión de información de los procesos de contratación de las entidades públicas del Estado Plurinacional de Bolivia.
+      </p>
+      </div>
+      <div class="card-body">
+      <h4>3.     Planteamiento del problema</h4>
+      <p>
+      Ciudadanos con dificultades para acceder a los datos del Sistema de Contrataciones Estatales (SICOES), razón que les impide ejercer el derecho a la fiscalización informada, documentada y contextualizada.  A dicho problema  se suma las restricciones en el acceso a la página www.sicoes.gob.bo, el uso de terminología técnica, interfaz poco intuitiva, restricción en la usabilidad y problemas de conectividad.
+      </p>
+       
+      </div>
+      <div class="card-body">
+      <h4>4.     Objetivo General</h4>
+      <p>
+      
+      Fortalecer los procesos de participación y control social en cuanto a los presupuestos públicos de los municipios de La Paz, mediante una página web de fácil manejo y libre acceso a los ciudadanos.
+      </p>
+      </div>
+      <div class="card-body">
+       <h4>5.     Objetivos Específicos</h4>
+      <p>
+      Promover el acceso a los datos de contrataciones públicas de ciudadanas y ciudadanos de los 87 gobiernos autónomos municipales de La Paz (2019-2020),  a través de un portal web.
+      </p>
+      <p>
+      Dar a conocer los presupuestos públicos de los municipios del departamento de La Paz.
+      </p>
+      <p>Liberar datos de contrataciones públicas municipales en formato estandarizado de Contrataciones Abiertas, albergadas en el SICOES.
+      </p>
+      </div>
+      <div class="card-body">
+      <h4>6.     Procedimiento</h4>
+      <p>
+      Para la elaboración del presente proyecto, seguimos el siguiente procedimiento, aplicados de acuerdo al orden señalado.
+      </p>
+      <p>
+      Recopilación de información y definición temática
+      En la primera reunión grupal, cada uno de los miembros del grupo expuso los temas de su interés y la base de datos con las que contaba. Siendo las
+      </p>
+      <p>
+      propuestas de temas sugeridos los siguientes citados:
+      </p>
+      
+      <p>
+      La definición y elección del tema de investigación, fue orientada por el docente encargado del módulo 5, considerando entre otras variables el impacto social de la propuesta. Habiendo elegido la propuesta 2, y el trabajo con datos de contrataciones públicas del SICOES.
+      </p>
+      
+      <b>Elaboración de CANVAS</b>
+      
+      <p>
+      De acuerdo a lo avanzado en la materia, se elaboró el Modelo Canvas, que es una herramienta para definir y crear modelos de negocio innovadores que simplifica 4 grandes áreas: clientes, oferta, infraestructura y viabilidad económica en un recuadro con 9 divisiones.
+      </p>
+      <p>
+      Elección de la estrategia de recopilación de datos
+      En primera instancia, para el scraper de datos, se optó por utilizar la herramienta diseñada por Edwin Salcedo y su trabajo sobre procesos de contratación de Desayuno Escolar Complementario, disponible en: https://github.com/danielstp/recopilaSicoes. Sin embargo debido a cambios en la arquitectura de los datos del Sistema de Contrataciones Estatales (SICOES), no pudo ser utilizada debido a su obsolescencia. Nuestra segunda opción, a pesar de que nos tomaría bastante tiempo, fue hacer la extracción de datos de forma manual; dividiendo el total de 87 municipios entre los cuatro miembros del equipo y un modelo único de hoja de cálculo para el ingreso de los datos extraídos de los procesos de contratación y el Programa de Anual de Contrataciones (PAC), para las gestiones 2019 y 2020.
+      </p>
+      <p>
+      Estrategia de interacción multidisciplinaria (aportes y restricciones de los miembros) para desarrollar el proyecto
+      El grupo de trabajo está compuesto por dos informáticos, una politóloga y una comunicadora social. La multidisciplinariedad del mismo permitió enriquecer el trabajo de acuerdo a las capacidades y conocimientos de cada integrante, lo que no quiere decir que se trabajó de manera individual, sino más bien se organizó en dos grupos: uno que trabajó en la redacción del proyecto y otro que trabajó la parte técnica del portal web y de manera conjunta se hizo la extracción de datos. 
+      </p>
+      <p>
+      Consideraciones de elección de herramientas de software
+      Consideramos utilizar un portal web, porque creemos que el mismo nos proporcionará visitantes que nos darán mayor visibilidad. El mismo estará diseñado bajo los siguientes parámetros:
+      </p>
+      <ul>
+      <li>Diseño responsive: Adaptada a todas las pantallas disponibles como el móvil, computadora o tablets.</li>
+      
+      <li>Fácil navegabilidad: Experiencia amigable, positiva y clara de todos los visitantes, con instrucciones claras para la audiencia.</li>
+      <li>Contenido de valor: Contenido que facilitará datos con disponibilidad de forma permanente y en un mismo lugar en la web, utilizará el modelo de datos JSON, para proporcionar publicaciones y registros para su descarga, directamente desde la base de datos, o desde otros sistemas existentes, y por último se facilitará enlaces a otros datos.</li>
+      <li>
+      Botones y llamadas de acción: Llamadas de acción y botones claros que ayuden a convertir y conseguir nuestros objetivos.</li>
+      
+      <li>Empleo de licencia Creative Commons</li>
+      </ul>
+      
+      <p>
+      Otra herramienta que consideramos utilizar es GitHub, debido a que es un servicio que nos permite almacenar repositorios Git en la nube al igual que lo hace un Google Drive, pero con el plus  de compartirlo en la enorme comunidad que tiene y también es un sitio excelente para el desarrollo colaborativo, en el que desarrolladores pueden descubrir, compartir y construir el mejor software.
+      </p>
+      <p>
+      Consideraciones sobre el impacto social y sostenibilidad del proyecto a proponer :
+      </p>
+      <p>
+      Primera etapa del proyecto: Incorporación de los 87 gobiernos municipales del departamento de La Paz en la evaluación al Índice de Apertura y Transparencia Municipal. Por medio de éste mecanismo lograremos visibilizar el impacto de la apertura de datos de contratación mediante el ejercicio de participación y control social por la ciudadanía.
+      </p>
+      <p>
+      Segunda etapa del proyecto: Proyectamos dentro de esta iniciativa la ampliación de sus servicios en una segunda fase, por medio de las siguientes acciones:
+      </p>
+      <p>
+      Ampliación a nivel nacional con la liberación de datos de contratación pública, sobre los 340 gobiernos municipales del país.
+      </p>
+      <p>
+      Introducción de gobiernos de nivel intermedio, nacional y demás instituciones en la base de datos, su visualización y georeferenciación.
+      </p>
+      <p>
+      Implementaremos material audiovisual de orientación en el uso de la página, disponible en idiomas originarios.
+      </p>
+      <p>
+      Generación de material complementario para la promoción de la participación ciudadana, relacionados a iniciativas legislativas, mecanismos de denuncia y planificación presupuestaria.
+      </p>
+      <p>
+      Geolocalización de las contrataciones realizadas y mapeo por rubro de inversión.
+      </p>
+      <p>
+      Disposición de datos sobre autoridades locales y su participación en las diversas comisiones actualizadas, a fin de establecer contacto con el usuario.
+      </p>
+      <p>
+      Problemas para el desarrollo de la investigación
+      Uno de los principales problemas que nos topamos al desarrollar el proyecto de investigación fue dificultosa ruta de extracción de datos dada la estructura del Sistema de Contrataciones Estatales (SICOES), además de la inestabilidad de su sistema.
+      </p>
+      <p>
+      Otra dificultad fue la limpieza de datos, debido a que los mismos contienen varios errores de escritura, tanto en el uso de acentos, ñ , entre otros.
+      </p>
+      <p>
+      Diagramas que describan sus procedimientos.
+      </p>
+      </div>
+      <div class="card-body">
+      <h4>7.     Análisis</h4>
+      
+      <p>
+      Dentro del análisis de contexto que se tuvo a la hora de elaborar el proyecto, a continuación detallamos los elementos considerados para su elaboración.
+      </p>
+      <p>
+      Proceso Canvas (b), Design Thinking para diagnóstico del proyecto
+      </p>
+      <p>
+      Análisis de la sociedad a la que se dirige el proyecto.
+      Podemos dividir la historia nacional del proceso de control social en dos momentos. El primero es el momento pre constitucional, donde leyes nacionales como la de Participación Popular, la cual establecía a los Comités de Vigilancia como única instancia para el ejercicio de la participación y control social de las municipalidades. El otro momento es el contexto pos constitucional, con la introducción de la Ley 341 y 482, de participación y control social y ley de gobiernos autónomos respectivamente: amplía la participación a sectores orgánicos, comunitarios y circunstanciales. En el marco de la normativa vigente todo ciudadano individual o colectivo puede ejercer el derecho a la participación y control social, en ese sentido, su ejercicio no está restringido a una entidad, institución u organismo, sino que se refiere a la facultad que tiene todo ciudadano de participar en la formulación de políticas públicas, así como el monitoreo y evaluación a la gestión, la posibilidad de formular acciones públicas y acceder a la información.
+      </p>
+      <p>
+      Sin embargo, cuando en cuanto al acceso a la información se refiere, en el país aún conservamos una actitud hermética frente al proceso de apertura y gobierno electrónico, situación que precariza las condiciones del proceso participativo ciudadano en la cosa pública y sus procesos de planificación. El SICOES ayuda a ilustrar la anterior afirmación y por ello elegida para la primera fase de apertura de datos por el equipo.
+      </p>
+      <p>
+        Estrategia a usar para generar impacto social con el proyecto
+      El impacto social está compuesto por los efectos a mediano y largo plazo que tiene este proyecto, sean estos efectos o consecuencias deseadas (planificadas) o no deseadas. Por lo tanto se prevé tener como impacto potencial previsto, el siguiente:
+      </p>
+      <p>
+      Positivos.- Prospectado como impacto del proyecto, el desarrollo del portal web, resolverá el problema de acceso y uso de datos sobre contrataciones públicas, a través de un modelo de contrataciones abiertas para el caso paceño y sus 87 gobiernos autónomos municipales; ello supone un aumento en el acceso a datos públicos municipales sobre contrataciones, especialmente en las áreas de medio ambiente y hábitat, resiliencia, seguridad y sistema alimentario, ordenamiento territorial y transporte, desarrollo humano, institucionalidad democrática, emergencias sanitarias y desastres naturales.
+      </p>
+      <p>
+      Efectos a mediano plazo.- Para dar sostenibilidad al proyecto, es necesario la búsqueda de fondos concursables con organismos no gubernamentales como la Fundación Construir, Red PCCS que son organismos con recursos para iniciativas en nuestra área de incidencia.
+      </p>
+      <p>
+      Para cumplir con el objetivo de que los datos abiertos lleguen también a la población rural del departamento de La Paz de habla aimara, se producirá material audiovisual   que oriente en el uso de la herramienta en idioma originario.
+      </p>
+      <p>
+      Para cumplir el objetivo de promover el acceso a los datos de contrataciones públicas de ciudadanas y ciudadanos de los 87 gobiernos autónomos municipales de La Paz, a través de un portal web, se notificará a los usuarios que se suscriban de manera gratuita al portal “Ojo al charque” para que mediante correo electrónico se brinde información de primera mano y sin spam, sobre temas y municipios de su interés.
+      </p>
+      <p>
+      Efectos a largo plazo, con la ayuda de las instituciones aliadas como La Federación de Asociaciones Municipales (FAM) y la Asociación de Gobiernos Autónomos Municipales del Departamento de La Paz (AGAMDEPAZ), se procederá a la evaluación del proyecto y su nivel de contribución con los procesos de control social, a ser realizada mediante entrevistas con autoridades locales de los 87 municipios.
+      </p>
+      <p>
+      Por lo tanto, abrir los datos de las contrataciones públicas en los 87 gobiernos autónomos del departamento de La Paz generará un impacto social que impulsará la acción de hacer que los procesos de participación sean más inclusivos, menos verticales y deliberaciones más sustanciales. Además de colaborar con los procesos de fiscalización ciudadana, que promoverá a largo plazo, un mayor involucramiento ciudadano en procesos de planificación.
+      </p>
+      <p>
+      Indicador de evaluación del impacto
+      </p>
+      <p>
+      A través de la aplicación de herramientas tecnológicas, se aplicará un cuestionario alojado en el portal web, el cual nos permitirá determinar si el proyecto produjo los efectos deseados en los visitantes, ya sea ciudadanos comunes como autoridades municipales.
+      </p>
+      <p>
+      Descripción de los datos objeto de la investigación
+      La base de datos de nuestro proyecto está compuesto de acuerdo a las siguientes abreviaturas y definiciones:
+      </p>
+      <ul>
+      <li>ANPE: Apoyo Nacional a la Producción y Empleo;</li>
+      
+      <li>CUCE: Código Único de Contrataciones Estatales</li>
+      
+      <li> DBC: Documento Base de Contratación;</li>
+      
+      <li>DBC-ANPE: Documento Base de Contratación de Apoyo Nacional a la Producción y Empleo;</li>
+      
+      <li>EPNE: Empresa Pública Nacional Estratégica;</li>
+      
+      <li>LP: Licitación Pública;</li>
+      
+      <li>MAE: Máxima Autoridad Ejecutiva;</li>
+      
+      <li>NB-SABS: Normas Básicas del Sistema de Administración de Bienes y Servicios;</li>
+      
+      <li>PAC: Programa Anual de Contrataciones;</li>
+      
+      <li>POA: Programa de Operaciones Anual;</li>
+      
+      <li>RE-SABS: Reglamento Específico del Sistema de Administración de Bienes y Servicios;</li>
+      
+      <li>RE-SABS-EPNE: Reglamento Específico del Sistema de Administración de Bienes y Servicios de Empresas Públicas Nacionales Estratégicas;</li>
+      
+      <li>RPA: Responsable del Proceso de Contratación de Apoyo Nacional a la Producción y Empleo;</li>
+      
+      <li>RPC: Responsable del Proceso de Contratación de Licitación Pública;</li>
+      
+      <li>SABS: Sistema de Administración de Bienes y Servicios;</li>
+      
+      <li>SICOES: Sistema de Contrataciones Estatales.</li>
+      </ul>
+      
+      <p>
+      <b>Definiciones:</b>
+      </p>
+      <p>
+      Código Único de Contrataciones Estatales – CUCE: Es el código asignado de forma automática a través del SICOES a cada proceso de contratación, para identificarlo de manera única, desde la publicación de la convocatoria hasta la finalización del proceso.
+      </p>
+      <p>
+      Documento Base de Contratación – DBC: Documento elaborado por la entidad contratante para cada contratación, con base en el Modelo de DBC emitido por el Órgano Rector; que contiene las especificaciones técnicas o términos de referencia, metodología de evaluación, procedimientos y condiciones para el proceso de contratación.
+      </p>
+      <p>
+      Máxima Autoridad Ejecutiva – MAE: Titular o personero de más alta jerarquía de cada entidad del sector público, sea este el máximo ejecutivo o la dirección colegiada, según lo establecido en su disposición legal o norma de creación
+      </p>
+      <p>
+      Programa Anual de Contrataciones – PAC: Instrumento de planificación donde la entidad pública programa las contrataciones de una gestión, en función de su POA y presupuesto.
+      </p>
+      <p>
+      Sistema de Contrataciones Estatales – SICOES: Es el sistema oficial de publicación y difusión de información de los procesos de contratación de las entidades públicas del Estado Plurinacional de Bolivia, establecido y administrado por el Órgano Rector.
+      </p>
+      <p>
+      Modalidad de contratación y cuantías
+      </p>
+      <p>
+      Modalidad
+      </p>
+      <p>
+      Cuantía
+      </p>
+      <p>
+      <b>Contratación Menor.- </b>
+      
+      De Bs 1.- (UN 00/100 BOLIVIANO) a Bs20.000.- (VEINTE MIL 00/100 BOLIVIANOS)
+      </p>
+      <p>
+      <b>Apoyo Nacional a la Producción y Empleo.- </b>De Bs 20.001.- (VEINTE MIL UN 00/100 BOLIVIANOS) a Bs1.000.000.- (UN MILLÓN 00/100 BOLIVIANOS)
+      </p>
+      <p>
+      <b>Licitación Pública.-</b>De Bs 1.000.001.- (UN MILLÓN UN 00/100 BOLIVIANOS) en adelante
+      </p>
+      <p>
+      <b>Contratación por Excepción.-</b> Sin límite de monto
+      </p>
+      <p>
+      <b>Contratación por Emergencia.-</b> Sin límite de monto
+      </p>
+      <p>
+      <b>Contratación Directa de Bienes y Servicios.-</b>Sin límite de monto
+      </p>
+      <p>
+               
+      
+      La base de datos principal consiste en una grilla de 12.456 filas y 26 columnas. Otra base de datos que se tiene es la del Programa Anual de Contrataciones (PAC), que contiene una grilla de 19.860 filas y 12 columnas.
+      </p>
+      <p>
+      La extracción de datos de contratación y PAC del SICOES, fue realizada desde el 6 al 13 de junio de 2020.
+      </p>
+      <p>
+      El formato de descarga está elaborado de acuerdo al modelo de datos de JSON que proporciona publicaciones y registros para su descarga, directamente desde la base de datos en csv y xls.
+      </p>
+      <p>
+       Diagnóstico de la condición institucional relacionada con los datos
+      El Sistema de Contrataciones Estatales (SICOES), es el único sistema oficial de publicación y difusión de información de los procesos de contratación de las entidades públicas del Estado Plurinacional de Bolivia, por lo mismo debería ser un sitio accesible para todos los ciudadanos. Sin embargo, se presenta como un sitio hermético, hostil , burocrático, que ensancha la brecha digital existente, poco socializado y conocido al extremo que una empresa externa como es el caso de INFOSICOES se da el lujo de lucrar con la accesibilidad de los datos publicados en el SICOES.
+      </p>
+      <p>
+      Visualizaciones de los datos
+      </p>
+      <p>
+      Las visualizaciones se desarrollaron sobre aplicaciones de uso sencillo y acceso gratuito como es la herramienta Tableau. Asimismo, los gráficos van acompañados de información de contexto que resulta útil para interpretarlos con facilidad, y así sean aprovechados por todas las personas y no solo por grupos especializados, como científicos de datos o periodistas.
+      </p>
+      <p>
+      En el siguiente enlace, más visualizaciones como las presentadas más abajo están disponibles para descarga y acceso a los datos de operación: https://public.tableau.com/profile/alan.corini#!/vizhome/SICOES-MUNICIPIOS-2020-2019/Hoja7?publish=yes
+      </p>
+      
+       
+      
+      
+      
+       
+      </div>
+      <div class="card-body">
+      <h4>8.     Conclusiones</h4>
+      
+      <p>
+      El proyecto de liberación de datos “Ojo al Charque” significa un gran aporte al enfoque de datos abiertos en Bolivia, ya que de cierto modo desburocratiza  la obtención de datos de vital importancia, como son las contrataciones públicas estatales, para que el ciudadano, en su rol fiscalizador y de control social,  se empodere del mismo y contribuya con una sociedad más transparente.
+      </p>
+      <p>
+      La primera fase del proyecto “Ojo al Charque”, liberó datos correspondientes a las contrataciones públicas de los 87 municipios del departamento de La Paz de las gestiones 2019-2020, que pueden ser explorados y utilizados en la siguiente dirección: https://ojoalcharque.github.io/public/index.html
+      </p>
+      <p>
+      Desburocratiza la circulación de información “sensible” relacionada con la gestión pública municipal, con especial énfasis los relacionados a los procesos de contratación que son albergados en el SICOES, así también aquella información sobre dinámicas demográficas, socioeconómicas. Se ofrecerá como complemento, albergar información complementaria de sitios oficiales y académicos para la           
+      </p>
+      <p>
+      Ofrece apoyo técnico por medio del soporte informativo, para mejorar los procesos de participación municipal (trabajo en comisiones para autoridades locales, fiscalización, iniciativa legislativa, entre otros).
+      </p>
+      <p>
+      Brinda accesibilidad al portal, a través de videos en idiomas originarios (quechua y aymara), que colaboren con el uso de la herramienta y la información disponible.
+      </p>
+      <p>
+      Como recomendación, persuadimos a una mejor administración del SICOES, por parte de los gobiernos subnacionales y del nivel intermedio, actualizaciones y mayor responsabilidad con el ingreso de datos actualizados para su consulta y empleo.
+      </p>
+      
+      </div>
+      <div class="card-body">
+      <h4>9.     Referencias</h4>
+      <p>
+      https://www.unodc.org/documents/bolivia/Guia_Participacion_y_Control_Social.pdf
+      </p>
+       <p>
+      
+      https://cursos.atesea.gob.bo/pluginfile.php/83/mod_resource/content/4/Texto%20base%20Curso%20Elementos%20Generales%20sobre%20la%20Participaci%C3%B3n%20y%20Control%20%20Social%20.pdf
+      </p>
+       
+      </div>
+
+  </div>
+
+
+	</div><!--End Row-->
+	
+
+
+      <!--End Dashboard Content-->
+	  
+	<!--start overlay-->
+		  <div class="overlay toggle-menu"></div>
+		<!--end overlay-->
+		
+    </div>
+    <!-- End container-fluid-->
+    
+    </div><!--End content-wrapper-->
+   <!--Start Back To Top Button-->
+    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+    <!--End Back To Top Button-->
+	
+	<!--Start footer-->
+	<footer class="footer">
+      <div class="container">
+        <div class="text-center">
+          Copyright © 2018 Dashtreme Admin
+        </div>
+      </div>
+    </footer>
+	<!--End footer-->
+	
+  <!--start color switcher-->
+   <div class="right-sidebar">
+    <div class="switcher-icon">
+      <i class="zmdi zmdi-settings zmdi-hc-spin"></i>
+    </div>
+    <div class="right-sidebar-content">
+
+      <p class="mb-0">Gaussion Texture</p>
+      <hr>
+      
+      <ul class="switcher">
+        <li id="theme1"></li>
+        <li id="theme2"></li>
+        <li id="theme3"></li>
+        <li id="theme4"></li>
+        <li id="theme5"></li>
+        <li id="theme6"></li>
+      </ul>
+
+      <p class="mb-0">Gradient Background</p>
+      <hr>
+      
+      <ul class="switcher">
+        <li id="theme7"></li>
+        <li id="theme8"></li>
+        <li id="theme9"></li>
+        <li id="theme10"></li>
+        <li id="theme11"></li>
+        <li id="theme12"></li>
+		<li id="theme13"></li>
+        <li id="theme14"></li>
+        <li id="theme15"></li>
+      </ul>
+      
+     </div>
+   </div>
+  <!--end color switcher-->
+   
+  </div><!--End wrapper-->
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+	
+ <!-- simplebar js -->
+  <script src="assets/plugins/simplebar/js/simplebar.js"></script>
+  <!-- sidebar-menu js -->
+  <script src="assets/js/sidebar-menu.js"></script>
+  <!-- loader scripts -->
+  <script src="assets/js/jquery.loading-indicator.js"></script>
+  <!-- Custom scripts -->
+  <script src="assets/js/app-script.js"></script>
+  <!-- Chart js -->
+  
+  <script src="assets/plugins/Chart.js/Chart.min.js"></script>
+ 
+  <!-- Index js -->
+  <script src="assets/js/index.js"></script>
+
+  
+</body>
+</html>

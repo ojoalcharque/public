@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>OJO AL Charque</title>
+    <!-- loader-->
+    <script src="assets/js/d3.min.js"></script>
+    <!--<script src="assets/js/chart.min.js"></script>-->
+    <link href="assets/css/pace.min.css" rel="stylesheet" />
+    <script src="assets/js/pace.min.js"></script>
+    <!--favicon-->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <!-- Vector CSS -->
+    <link
+      href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css"
+      rel="stylesheet"
+    />
+    <!-- simplebar CSS-->
+    <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- animate CSS-->
+    <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+    <!-- Icons CSS-->
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <!-- Sidebar CSS-->
+    <link href="assets/css/sidebar-menu.css" rel="stylesheet" />
+    <!-- Custom Style-->
+    <link href="assets/css/app-style.css" rel="stylesheet" />
+  
+  
+  </head>
+
+  <body class="bg-theme bg-theme1">
+    <!-- Start wrapper-->
+    <div id="wrapper">
+      <!--Start sidebar-wrapper-->
+      <div
+        id="sidebar-wrapper"
+        data-simplebar=""
+        data-simplebar-auto-hide="true"
+      >
+        <div class="brand-logo">
+          <a href="index.html">
+            <img
+              src="assets/images/icon/logo.png"
+              class="logo-icon"
+              alt="logo icon"
+            />
+            <h5 class="logo-text">Ojo Al Charque</h5>
+          </a>
+        </div>
+        <ul class="sidebar-menu do-nicescrol">
+          <li class="sidebar-header">MENU</li>
+          <li>
+            <a href="index.html">
+              <i class="zmdi zmdi-view-dashboard"></i> <span>Principal</span>
+            </a>
+          </li>
+          <li>
+            <a href="proyecto.html">
+              <i class="zmdi zmdi-view-dashboard"></i> <span>Proyecto</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="sicoes.html">
+              <i class="zmdi zmdi-invert-colors"></i>
+              <span>Contrataciones - SICOES</span>
+              <small class="badge float-right badge-light">New</small>
+            </a>
+          </li>
+
+          <li>
+            <a href="sicoes.html">
+              <i class="zmdi zmdi-format-list-bulleted"></i>
+              <span>PAC - SICOES</span>
+              <small class="badge float-right badge-light">New</small>
+            </a>
+          </li>
+
+          <li>
+            <a href="profile.html">
+              <i class="zmdi zmdi-calendar-check"></i> <span>Acerca de</span>
+            </a>
+          </li>
+
+          <li class="sidebar-header">ENLACES DE INTERES</li>
+          <li>
+            <a href="https://github.com/ojoalcharque/data" target="_blank"
+              ><i class="zmdi zmdi-share text-success"></i>
+              <span>Github - Repo</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.sea.gob.bo/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>Servicio Estatal de Autonomías</span></a
+            >
+          </li>
+          <li>
+            <a href="http://agamdepaz.com.bo/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>AGAMDEPAZ</span></a
+            >
+          </li>
+          <li>
+            <a href="https://rafalopezv.io/competencias/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>Rafael López</span></a
+            >
+          </li>
+          <li>
+            <a href="https://fam.org.bo/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>FAM - Bolivia</span></a
+            >
+          </li>
+          <li>
+            <a href="http://amb.bo/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>AMB - Bolivia</span></a
+            >
+          </li>
+          <li>
+            <a href="http://www.gacetaoficialdebolivia.gob.bo/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>GACETA OFICIAL</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="http://www.presidencia.gob.bo/index.php/viceministerios/va"
+              target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>Viceministerio de Autonomías</span></a
+            >
+          </li>
+          <li>
+            <a href="http://www.fdi.gob.bo/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>Fondo de Desarrollo Indigena</span></a
+            >
+          </li>
+          <li>
+            <a href="http://redpccs.org.bo/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i>
+              <span>RED PCCS</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://jubileobolivia.com/Ambito-Tematico/Presupuestos-y-Fiscalidad"
+              target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i> <span>Jubileo</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.sicoes.gob.bo/" target="_blank"
+              ><i class="zmdi zmdi-share text-info"></i> <span>SICOES</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <!--End sidebar-wrapper-->
+
+      <!--Start topbar header-->
+      <header class="topbar-nav">
+        <nav class="navbar navbar-expand fixed-top">
+          <ul class="navbar-nav mr-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link toggle-menu" href="javascript:void();">
+                <i class="icon-menu menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+            </li>
+          </ul>
+        </nav>
+      </header>
+<!--End topbar header-->
+
+<div class="clearfix"></div>
+	
+  <div class="content-wrapper">
+    <div class="container-fluid">
+
+      <div class="row mt-3">
+        <div class="col-lg-4">
+           <div class="card profile-card-2">
+            <div class="card-img-block">
+                <img class="img-fluid" src="assets/images/icon/logo.png" alt="Card image cap">
+            </div>
+            <div class="card-body pt-5">
+                <img src="assets/images/icon/logo.png" alt="profile-image" class="profile">
+                <h5 class="card-title">Ojo Al Charque</h5>
+                <p class="card-text">Es un proyecto final para el Diplomado de Datos Abiertos de la Universidad Mayor de San Simon </p>
+                <div class="icon-block">
+                  <a href="javascript:void();"><i class="fa fa-facebook bg-facebook text-white"></i></a>
+				          <a href="javascript:void();"> <i class="fa fa-twitter bg-twitter text-white"></i></a>
+				          <a href="javascript:void();"> <i class="fa fa-google-plus bg-google-plus text-white"></i></a>
+                </div>
+            </div>
+
+            <div class="card-body border-top border-light" style="display: none;">
+                 <div class="media align-items-center">
+                   <div>
+                       <img src="assets/images/timeline/html5.svg" class="skill-img" alt="skill img">
+                   </div>
+                     <div class="media-body text-left ml-3">
+                       <div class="progress-wrapper">
+                         <p>GESTION 2020 <span class="float-right">50%</span></p>
+                         <div class="progress" style="height: 5px;">
+                          <div class="progress-bar" style="width:65%"></div>
+                         </div>
+                        </div>                   
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="media align-items-center">
+                   <div><img src="assets/images/timeline/bootstrap-4.svg" class="skill-img" alt="skill img"></div>
+                     <div class="media-body text-left ml-3">
+                       <div class="progress-wrapper">
+                         <p>Bootstrap 4 <span class="float-right">50%</span></p>
+                         <div class="progress" style="height: 5px;">
+                          <div class="progress-bar" style="width:50%"></div>
+                         </div>
+                        </div>                   
+                    </div>
+                  </div>
+                   <hr>
+                  <div class="media align-items-center">
+                   <div><img src="assets/images/timeline/angular-icon.svg" class="skill-img" alt="skill img"></div>
+                     <div class="media-body text-left ml-3">
+                       <div class="progress-wrapper">
+                         <p>AngularJS <span class="float-right">70%</span></p>
+                         <div class="progress" style="height: 5px;">
+                          <div class="progress-bar" style="width:70%"></div>
+                         </div>
+                        </div>                   
+                    </div>
+                  </div>
+                    <hr>
+                  <div class="media align-items-center">
+                   <div><img src="assets/images/timeline/react.svg" class="skill-img" alt="skill img"></div>
+                     <div class="media-body text-left ml-3">
+                       <div class="progress-wrapper">
+                         <p>React JS <span class="float-right">35%</span></p>
+                         <div class="progress" style="height: 5px;">
+                          <div class="progress-bar" style="width:35%"></div>
+                         </div>
+                        </div>                   
+                    </div>
+                  </div>
+                  
+              </div>
+        </div>
+
+        </div>
+
+        <div class="col-lg-8">
+           <div class="card">
+            <div class="card-body">
+            <ul class="nav nav-tabs nav-tabs-primary top-icon nav-justified">
+                <li class="nav-item">
+                    <a href="javascript:void();" data-target="#profile" data-toggle="pill" class="nav-link active"><i class="icon-user"></i> <span class="hidden-xs">Grupo</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void();" data-target="#messages" data-toggle="pill" class="nav-link"><i class="icon-envelope-open"></i> <span class="hidden-xs">Contacto</span></a>
+                </li>
+                <li class="nav-item" style="display: none;">
+                    <a href="javascript:void();" data-target="#edit" data-toggle="pill" class="nav-link"><i class="icon-note"></i> <span class="hidden-xs">Edit</span></a>
+                </li>
+            </ul>
+            <div class="tab-content p-3">
+                <div class="tab-pane active" id="profile">
+                    <h5 class="mb-3">Integrantes</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6></h6>
+                            <p>
+                              Paola Vedia
+                              Mayra Ari Condori
+                              Giovana De la Cruz
+                              Alan Corini
+                              
+                            </p>
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <h6>FUENTE DE DATOS</h6>
+                            <a href="javascript:void();" class="badge badge-dark badge-pill">SICOES</a>
+                            <a href="javascript:void();" class="badge badge-dark badge-pill">FAM</a>
+                            <a href="javascript:void();" class="badge badge-dark badge-pill">MEFP</a>
+                            
+                            <hr>
+                            <span class="badge badge-primary"><i class="fa fa-user"></i> 12455 Registros</span>
+                            <span class="badge badge-success"><i class="fa fa-cog"></i> 8 Areas</span>
+                            <span class="badge badge-danger"><i class="fa fa-eye"></i> 19 SubAReas</span>
+                        </div>
+                        <div class="col-md-12">
+                            <h5 class="mt-2 mb-3"><span class="fa fa-clock-o ion-clock float-right"></span> Analisis de Datos</h5>
+                             <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <tbody>                                    
+                                    <tr>
+                                        <td>
+                                            <strong>SICOES</strong> - <strong>Fuente de Datos Principal</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Municipios</strong> - <strong> Categorias</strong>
+                                        </td>
+                                    </tr>
+                                  
+                                </tbody>
+                            </table>
+                          </div>
+                        </div>
+                    </div>
+                    <!--/row-->
+                </div>
+                <div class="tab-pane" id="messages">
+                    
+                  <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                        <tbody>                                    
+                            <tr>
+                                <td>
+                                   <span class="float-right font-weight-bold">Correo</span> contacto@
+                                </td>
+                            </tr>
+                            
+                        </tbody> 
+                    </table>
+                  </div>
+                </div>
+                <div class="tab-pane" id="edit">
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" value="Mark">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Last name</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" value="Jhonsan">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="email" value="mark@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Change profile</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="file">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Website</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="url" value="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Address</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" value="" placeholder="Street">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label"></label>
+                            <div class="col-lg-6">
+                                <input class="form-control" type="text" value="" placeholder="City">
+                            </div>
+                            <div class="col-lg-3">
+                                <input class="form-control" type="text" value="" placeholder="State">
+                            </div>
+                        </div>
+                       
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Username</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" value="jhonsanmark">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Password</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="password" value="11111122333">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="password" value="11111122333">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label"></label>
+                            <div class="col-lg-9">
+                                <input type="reset" class="btn btn-secondary" value="Cancel">
+                                <input type="button" class="btn btn-primary" value="Save Changes">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+      </div>
+        
+    </div>
+
+	<!--start overlay-->
+		  <div class="overlay toggle-menu"></div>
+		<!--end overlay-->
+	
+    </div>
+    <!-- End container-fluid-->
+   </div><!--End content-wrapper-->
+   <!--Start Back To Top Button-->
+    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+    <!--End Back To Top Button-->
+	
+	<!--Start footer-->
+	<footer class="footer">
+      <div class="container">
+        <div class="text-center">
+          Copyright © 2018 Dashtreme Admin
+        </div>
+      </div>
+    </footer>
+	<!--End footer-->
+	
+	<!--start color switcher-->
+   <div class="right-sidebar">
+    <div class="switcher-icon">
+      <i class="zmdi zmdi-settings zmdi-hc-spin"></i>
+    </div>
+    <div class="right-sidebar-content">
+
+      <p class="mb-0">Gaussion Texture</p>
+      <hr>
+      
+      <ul class="switcher">
+        <li id="theme1"></li>
+        <li id="theme2"></li>
+        <li id="theme3"></li>
+        <li id="theme4"></li>
+        <li id="theme5"></li>
+        <li id="theme6"></li>
+      </ul>
+
+      <p class="mb-0">Gradient Background</p>
+      <hr>
+      
+      <ul class="switcher">
+        <li id="theme7"></li>
+        <li id="theme8"></li>
+        <li id="theme9"></li>
+        <li id="theme10"></li>
+        <li id="theme11"></li>
+        <li id="theme12"></li>
+		<li id="theme13"></li>
+        <li id="theme14"></li>
+        <li id="theme15"></li>
+      </ul>
+      
+     </div>
+   </div>
+  <!--end color switcher-->
+   
+  </div><!--End wrapper-->
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+	
+  <!-- simplebar js -->
+  <script src="assets/plugins/simplebar/js/simplebar.js"></script>
+  <!-- sidebar-menu js -->
+  <script src="assets/js/sidebar-menu.js"></script>
+  
+  <!-- Custom scripts -->
+  <script src="assets/js/app-script.js"></script>
+	
+</body>
+</html>
